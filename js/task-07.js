@@ -10,3 +10,4 @@ const getValue = (event) => {
 };
 
 refs.input.addEventListener("input", getValue);
+
