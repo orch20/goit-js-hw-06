@@ -3,8 +3,8 @@ const getCategories = () => {
   console.log(`Number of categories: ${categoriesEl.length}`);
 
   for (let el of categoriesEl) {
-    console.log("Category: ", el.querySelector("h2").textContent);
-    console.log("Elements: ", el.querySelector("ul").children.length);
+    console.log("Category: ", el.firstElementChild.textContent);
+    console.log("Elements: ", el.lastElementChild.children.length);
   }
 };
 

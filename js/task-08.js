@@ -1,8 +1,6 @@
 const refs = {
   form: document.querySelector(".login-form"),
 };
-const LOGIN_LIST = [];
-console.log(LOGIN_LIST);
 
 const getLogin = (event) => {
   event.preventDefault();
@@ -16,7 +14,7 @@ const getLogin = (event) => {
       email: email.value,
       password: password.value,
     };
-    LOGIN_LIST.push(loginList);
+    console.log(loginList);
   } else return alert("Fill the empty fields!");
   refs.form.reset();
 };
